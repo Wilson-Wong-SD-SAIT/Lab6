@@ -35,9 +35,6 @@ namespace Lab6
 			{	
 				streamReader.BaseStream.Seek(0, SeekOrigin.Begin);
 				Console.WriteLine("The First character is: " + (char)streamReader.Read());
-
-				streamReader.BaseStream.Seek(-3, SeekOrigin.End);
-				Console.WriteLine("The Middle character is: " + (char)streamReader.Read());
 			}
 
 			using (StreamReader streamReader = File.OpenText("event.txt"))
